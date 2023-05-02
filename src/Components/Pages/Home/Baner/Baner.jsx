@@ -1,13 +1,41 @@
+// import React from 'react';
+
+
+// const Baner = () => {
+//     return (
+//       <div className='w-full relative'>
+//         <img style={{height: '85vh', filter: 'brightness(80%)' }} className='w-full' src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=80' alt="" />
+//         <div className='absolute top-0 left-0 text-white text-left m-2'>
+//           <h1 className='text-5xl font-bold m-10'>Food that reminds of <br />
+//            YOUR HOME!!</h1>
+//           <p className='text-lg font-bold m-10 '>We serve delicious food that will satisfy your taste buds.</p>
+//         </div>
+//       </div>
+//     );
+//   };
+  
+
+// export default Baner;
+
 import React from 'react';
 
-const Baner = () => {
-    return (
-        <div className='w-full relative'>
-            <img style={{height: '80vh' }} className='w-full ' src="https://images.unsplash.com/photo-1483137140003-ae073b395549?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZvb2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
-            <div className='w-full absolute inset-0 bg-black opacity-50'>
-            </div>
-        </div>
-    );
+const Banner = () => {
+  return (
+    <div className='w-full relative'>
+      <img style={{height: '85vh', filter: 'brightness(65%)' }} className='w-full' src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=80' alt="" />
+      <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center m-2'>
+        <h1 className='text-5xl font-bold'>Food that reminds of YOUR HOME!!</h1>
+        <p className='text-lg font-bold mt-10'>We serve delicious food that will satisfy your taste buds</p>
+      </div>
+    </div>
+  );
 };
 
-export default Baner;
+export default Banner;
+
+
+
+
+
+
+
