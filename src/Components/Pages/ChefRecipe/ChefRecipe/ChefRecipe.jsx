@@ -6,6 +6,8 @@ const ChefRecipe = () => {
     const data = useLoaderData();
     const { id, name, picture, yearsOfExperience, numberOfRecipes, likes, bio, recipes } = data;
 
+    console.log(recipes);
+
     return (
         <div className='md:mx-16'>
             <div className='flex justify-between w-full bg-slate-300 h-full'>
