@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowDownTrayIcon} from '@heroicons/react/24/solid';
 import html2pdf from 'html2pdf.js';
 
-/**please install: npm install html2pdf.js */
+
 
 const Blog = () => {
 
