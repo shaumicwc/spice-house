@@ -1,11 +1,11 @@
 import React from 'react';
-import Baner from '../Baner/Baner';
+import Banner from '../Banner/Banner';
 import Chef from '../Chef/Chef';
 
 const Home = () => {
     return (
         <div className='mx-16'>
-            <Baner/>
+            <Banner/>
             <Chef/>
         </div>
     );

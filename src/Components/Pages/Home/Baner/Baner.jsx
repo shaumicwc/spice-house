@@ -1,7 +1,7 @@
 // import React from 'react';
 
 
-// const Baner = () => {
+// const Banner = () => {
 //     return (
 //       <div className='w-full relative'>
 //         <img style={{height: '85vh', filter: 'brightness(80%)' }} className='w-full' src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=80' alt="" />
@@ -15,7 +15,7 @@
 //   };
   
 
-// export default Baner;
+// export default Banner;
 
 import React from 'react';
 
