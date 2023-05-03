@@ -7,7 +7,7 @@ const Chef = () => {
     const {setLoading} = useContext(AuthContext)
 
     useEffect(() => {
-        fetch('http://localhost:4000/')
+        fetch('https://ai-10-spice-house-server-shaumicwc.vercel.app/recipe')
             .then(res => res.json())
             .then(data => setChef(data))
             setLoading(false)

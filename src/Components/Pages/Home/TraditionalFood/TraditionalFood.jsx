@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import TraditionalFoodCard from '../TraditionalFoodCard.jsx/TraditionalFoodCard';
+import TraditionalFoodCard from '../TraditionalFoodCard/TraditionalFoodCard';
 import { AuthContext } from '../../../Provider/AuthProvider';
 
 const TraditionalFood = () => {
@@ -7,7 +7,7 @@ const TraditionalFood = () => {
     const {setLoading} = useContext(AuthContext)
 
     useEffect(()=>{
-        fetch('http://localhost:4000/traditionalFood')
+        fetch('https://ai-10-spice-house-server-shaumicwc.vercel.app/traditionalFood')
         .then(res=> res.json())
         .then(data => setTraditionalFood(data))
         setLoading(false)

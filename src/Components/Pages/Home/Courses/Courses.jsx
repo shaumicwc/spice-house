@@ -7,7 +7,7 @@ const Courses = () => {
     const {setLoading} = useContext(AuthContext)
 
     useEffect(()=>{
-        fetch('http://localhost:4000/cuisineCourse')
+        fetch('https://ai-10-spice-house-server-shaumicwc.vercel.app/cuisineCourse')
         .then(res => res.json())
         .then(data => setCourses(data))
         setLoading(false)
