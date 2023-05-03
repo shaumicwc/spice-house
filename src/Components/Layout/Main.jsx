@@ -7,7 +7,7 @@ import Footer from '../Pages/Shared/Footer/Footer';
 
 const Main = () => {
     return (
-        <div className=''>
+        <div className='mx-auto md:mx-16'>
             <Header/>
             <Outlet/>
             <ToastContainer/>
