@@ -19,7 +19,7 @@ const Login = () => {
 
         setError('')
         if (password.length < 6) {
-            setError('Password at least 6 character long')
+            setError('Please add at least 6 characters in your password')
             return;
         } else {
             signInUser(email, password)
@@ -34,11 +34,15 @@ const Login = () => {
                     if (errorMessage === 'Firebase: Error (auth/wrong-password).') {
                         setError('Password or Email invalid')
                         setLoading(false)
+                    } else if(errorMessage === 'Firebase: Error (auth/user-not-found).'){
+                        setError('You have no any account. Please register')
+                        setLoading(false)
                     }
                     console.log(errorMessage)
                 })
         }
     }
+
     const handleGoogleSignIn = () =>{
         googleSignInUser()
         .then(result => {

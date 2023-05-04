@@ -4,10 +4,9 @@ import Home from "../Pages/Home/Home/Home";
 import ChefRecipe from "../Pages/ChefRecipe/ChefRecipe/ChefRecipe";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import ErrorElement from "../Pages/errorElement/ErrorElement";
-
 import PrivateRoute from "./PrivateRoute";
 import Blog from "../Pages/Blogs/Blog";
+import ErrorElement from "../Pages/Shared/ErrorElement/ErrorElement";
 
 const route = createBrowserRouter([
     {

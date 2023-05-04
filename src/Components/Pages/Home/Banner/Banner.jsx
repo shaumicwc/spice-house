@@ -5,12 +5,17 @@ const Banner = () => {
 
   return (
     <div className='w-full relative'>
+
+    {/* banner image here */}
+
       <img
         
         className='w-full h-height-sm md:h-height-md brightness-65'
         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=80"
         alt=""
       />
+
+    {/* banner text here */}
 
       <div className='absolute inset-0 flex items-center justify-center'>
         <div className='text-white'>
