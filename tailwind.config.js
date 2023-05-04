@@ -31,7 +31,7 @@ export default {
     brightness: ['responsive'],
   },
   daisyui: {
-    themes: ['cupcake'],
+    themes: ['lofi'],
   },
   plugins: [require('daisyui')],
 }

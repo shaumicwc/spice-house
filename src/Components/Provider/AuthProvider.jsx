@@ -11,6 +11,8 @@ const githubProvider = new GithubAuthProvider();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true)
+    const [bgColor, setBgColor] = useState(false);
+
 
     const createUser = (email, password) =>{
         setLoading(true)
@@ -50,7 +52,9 @@ const AuthProvider = ({children}) => {
         googleSignInUser,
         githubSignInUser,
         loading,
-        setLoading
+        setLoading,
+        bgColor,
+        setBgColor
     }
     console.log(user)
     return (
