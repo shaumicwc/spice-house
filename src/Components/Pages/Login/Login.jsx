@@ -11,31 +11,34 @@ const Login = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/'
 
-    const handleSubmit = event =>{
+    const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
 
         setError('')
-        signInUser(email, password)
-        .then(result => {
-            const loggedUser = result.user;
-            setLoading(false)
-            navigate(from, {replace: true})
-            console.log(loggedUser)
-        })
-        .catch(error =>{
-            const errorMessage = error.message;
-            if(errorMessage === 'Firebase: Error (auth/wrong-password).'){
-                setError('Password or Email invalid')
-                setLoading(false)
-            }
-            console.log(errorMessage)
-        })
-       
+        if (password.length < 6) {
+            setError('Password at least 6 character long')
+            return;
+        } else {
+            signInUser(email, password)
+                .then(result => {
+                    const loggedUser = result.user;
+                    setLoading(false)
+                    navigate(from, { replace: true })
+                    console.log(loggedUser)
+                })
+                .catch(error => {
+                    const errorMessage = error.message;
+                    if (errorMessage === 'Firebase: Error (auth/wrong-password).') {
+                        setError('Password or Email invalid')
+                        setLoading(false)
+                    }
+                    console.log(errorMessage)
+                })
+        }
     }
-
     const handleGoogleSignIn = () =>{
         googleSignInUser()
         .then(result => {

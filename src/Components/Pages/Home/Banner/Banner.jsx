@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
 const Banner = () => {
-  const [showBlur, setShowBlur] = useState(true);
+  
 
   return (
     <div className='w-full relative'>
       <img
-        onLoad={() => setShowBlur(false)}
-        className={`w-full h-height-sm md:h-height-md ${showBlur ? "blur-xl" : "blur-0"} brightness-65 transition duration-2000`}
+        
+        className='w-full h-height-sm md:h-height-md brightness-65'
         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=1920&q=80"
         alt=""
       />
