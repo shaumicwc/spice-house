@@ -26,7 +26,7 @@ const Header = () => {
    
     return (
         <header className='px-5 mb-5 flex justify-between items-center bg-base-200 py-3 md:py-5'>
-            <p className='text-xl md:text-2xl font-bold'>Spice House</p>
+            <p className='text-xl md:text-2xl font-bold uppercase text-red-900 '>Spice House</p>
             <nav className=' flex flex-row items-center space-x-3 md:space-x-8 font-semibold md:font-bold'>
                 
                 <div className='form-control hidden md:flex'>
